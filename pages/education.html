@@ -48,7 +48,7 @@
 
         <!--Star Logo-->
         <div class="icons" id="star">
-            <img src="icons/025-star.png" alt="Icon" width="80" height="80">        
+            <img src="../icons/025-star.png" alt="Icon" width="80" height="80">        
         </div>
 
         <!--Point Counter -->
@@ -58,7 +58,7 @@
         <div id="nav-placeholder"></div>
         
         <script>
-            fetch('nav.html')
+            fetch('../nav.html')
                 .then(response => {
                     if (!response.ok){
                         throw new Error('Failed to load nav: ${response.status}');
