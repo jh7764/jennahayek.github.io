@@ -116,7 +116,7 @@
             fetch('nav.html')
                 .then(response => {
                     if (!response.ok){
-                        throw new Error(`Failed to load nav: ${response.status}`);
+                        throw new Error('Failed to load nav: ${response.status}');
                     }
                     return response.text();
                 })
@@ -141,14 +141,14 @@
             <div class="lock">
                 <button onclick="buy('2048', 20)"> Price: 20 </button>
             </div>
-            <iframe src="jh7764.github.io/2048-master/" width="400" height="500"></iframe> 
+            <iframe src="2048-master/" width="400" height="500"></iframe> 
         </div>
 
         <div class="game" data-id="sudoku">
             <div class="lock">
-                <button class="transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110" onclick="buy('sudoku', 20)"> Price: 20 </button>
+                <button onclick="buy('sudoku', 20)"> Price: 20 </button>
             </div>
-            <iframe src = "jh7764.github.io/Sudoku-main/" width="400" height="500"></iframe>
+            <iframe src = "Sudoku-main/" width="400" height="500"></iframe>
         </div>
         
 
