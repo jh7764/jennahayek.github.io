@@ -6,6 +6,19 @@ window.addEventListener("load", () => {
     const point = document.getElementsByClassName("point");
     const nav = document.getElementById("nav-placeholder");
 
+
+    setTimeout(() => {
+
+        setTimeout(() => {
+            loader.style.display = "none";
+            content.style.display = "block";
+            star.style.display = "block";
+            counter.style.display = "block";
+            nav.style.display = "block";
+
+        }, 300);
+    }, 300); 
+
     
     let count = parseInt(localStorage.getItem("points")) || 0;
     counter.innerText = count;
