@@ -1,7 +1,11 @@
 window.addEventListener("load", () => {
+
+    const content = document.getElementById("content");
     const star = document.getElementById("star")
     const counter = document.getElementById("counter");
     const point = document.getElementsByClassName("point");
+    const nav = document.getElementById("nav-placeholder");
+
     
     let count = parseInt(localStorage.getItem("points")) || 0;
     counter.innerText = count;
